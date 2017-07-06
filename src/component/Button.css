@@ -1,0 +1,132 @@
+.component-button {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+ 
+}
+
+.component-button.wide {
+  width: 50%;
+}
+
+.component-button button {
+
+  //padding:5px;
+ 
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  font-size: 12px;
+  //margin: 0 0px 0 0;
+  flex: 1 0 auto;
+  padding: 0;
+  color:#000;
+  //cursor: pointer;
+  border:.5px solid #fff;
+  // font-weight: 100; 
+      transition: .3s ease;
+}
+
+.component-button > div{
+  display: flex;
+    justify-content: center;
+  flex:1;
+}
+
+.component-button button:before{
+content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    background: #FF2D55;
+    width: 20px;
+    height: 20px;
+    border:2px solid #FFB3C1;
+    border-radius: 100%;
+      margin: -12px 0 0 -12px;
+    opacity: 0;
+    transition: .3s ease;
+    z-index: 0;
+}
+.component-button span{position: relative;}
+.component-button button:hover,.component-button button:focus ,.component-button button:active {
+//background:blue;
+outline:none;
+  //border: 0;
+
+  // font-weight: 100; 
+}
+
+.component-button button:focus span,.component-button button:active span{
+  color:#fff;
+}
+
+.component-button:last-child button {
+  margin-right: 0;
+}
+
+.component-button.orange button {
+ // background-color: #f0f0f0;
+  color: #FF2D55;
+  font-weight: bold;
+}
+.component-button button:focus:before,.component-button button:active:before{
+ opacity: 1; 
+ transform: scale(6);
+}
+
+@media (min-width: 200px) and (min-height: 200px) {
+  .component-button button {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 300px) and (min-height: 300px) {
+  .component-button button {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 400px) and (min-height: 400px) {
+  .component-button button {
+    font-size: 24px;
+  }
+
+.component-button button:focus:before,.component-button button:active:before{
+ opacity: 1; 
+ transform: scale(2.4);
+}
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+  .component-button button {
+    font-size: 40px;
+  }
+
+.component-button button:focus:before,.component-button button:active:before{
+ opacity: 1; 
+ transform: scale(3);
+}
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+  .component-button button {
+    font-size: 60px;
+  }
+  .component-button button:focus:before,.component-button button:active:before{
+ opacity: 1; 
+ transform: scale(4.2);
+}
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  .component-button button {
+    font-size: 70px;
+  }
+  .component-button button:focus:before,.component-button button:active:before{
+ opacity: 1; 
+ transform: scale(6);
+}
+}

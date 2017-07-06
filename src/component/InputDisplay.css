@@ -1,0 +1,66 @@
+.InputDisplayContainer{
+	//padding-top: 20px;
+	//width: 100%;
+	background: #000;
+	color: #fff;
+  position: relative;
+    height: 40px;
+    line-height: 60px;
+  display: flex;
+  flex-direction: row;
+// align-item:flex-end;
+ padding-left:30px; 
+  padding-right:30px; 
+  text-align: right;
+  font-weight: 100;
+   word-wrap: break-word;
+ //  overflow: hidden;
+ // / font-weight: bold;
+  //flex: 1 0 auto;
+}
+.InputDisplayContainer>div{
+	//display: inline-flex;
+ //text-align: center;
+ font-size: 30px;
+  width: 100%;
+  margin-bottom: 0px;
+  flex: 1 0 auto;
+ 
+}
+
+
+@media (min-width: 200px) and (min-height: 200px) {
+  .InputDisplayContainer div {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 300px) and (min-height: 300px) {
+  .InputDisplayContainer div {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 400px) and (min-height: 400px) {
+  .InputDisplayContainer div {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 500px) {
+  .InputDisplayContainer div {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 600px) {
+  .InputDisplayContainer div {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  .InputDisplayContainer div {
+    font-size:40px;
+  }
+}
